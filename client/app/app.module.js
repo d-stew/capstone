@@ -2,7 +2,8 @@
   'use strict';
 
   var dependencies = [
-    'ui.router'
+    'ui.router',
+    'app.twitter'
   ];
 
   angular.module('app', dependencies)
@@ -22,7 +23,7 @@
         url: "/",
         template: "<main></main>"
       });
-      
+
   $urlRouterProvider.otherwise('/');
   $locationProvider.html5Mode(true);
   }
